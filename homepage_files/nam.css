@@ -1,0 +1,50 @@
+.icons { padding:0.8em; padding-left:0; }
+.icons img { padding:0.2em;}
+
+body {
+   font-family: sans-serif;
+    
+/*  font-family: 'Cousine', sans-serif; */
+  margin-left:15%;
+  margin-top:5%;
+  width: 70%;
+  background-color: #FFF;
+  color:#424242;
+  line-height:150%
+}
+
+li {
+margin-left: 0;
+margin-right: 0;
+margin-top: 0.6em;
+margin-bottom: 0.6em;
+}
+
+a:link { color: #A00; }
+a:visited { color: #800; }
+.a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+th { 
+  text-align:left; 
+  vertical-align:top; 
+}
+
+td { 
+  text-align:left; 
+  vertical-align:top;
+}
+
+img {
+  border: 0;
+}
+
+.shout {
+  background-color: #EEF;
+  border: 2px solid red;
+  padding: 1em;
+}
+
+
+
+
