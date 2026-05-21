@@ -1,265 +1,235 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html><!-- $Id: header.html,v 1.4 2007/07/18 05:21:20 Exp $ --><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Homepage of Andriy Norets, Professor of Economics at Brown University. Research in Bayesian econometrics and dynamic discrete choice models.">
+  <meta name="keywords" content="Andriy Norets, Bayesian, econometrics, dynamic discrete choice">
+  <meta name="author" content="Andriy Norets">
+  <title>Andriy Norets - Homepage</title>
+  <!-- Existing site stylesheet kept for backwards compatibility; the inline
+       rules below take precedence and provide the accessible defaults. -->
+  <link rel="stylesheet" href="./homepage_files/nam.css">
+  <style>
+    /* ---------- Accessible base styling -------------------------- */
+    :root {
+      --text:        #111;
+      --bg:          #fff;
+      --link:        #0033a0;       /* >= 7:1 contrast on white */
+      --link-hover:  #b30000;
+      --rule:        #888;
+      --focus-ring:  #ffae00;
+      --max-width:   54rem;
+    }
+    *,
+    *::before,
+    *::after { box-sizing: border-box; }
 
+    html { font-size: 100%; }
+    body {
+      color: var(--text);
+      background: var(--bg);
+      font-family: Georgia, "Times New Roman", Times, serif;
+      line-height: 1.5;
+      margin: 0;
+      padding: 1.5rem;
+      max-width: var(--max-width);
+      margin-inline: auto;
+    }
+    a {
+      color: var(--link);
+      text-decoration: underline;
+    }
+    a:hover, a:focus {
+      color: var(--link-hover);
+    }
+    /* Always-visible focus outline for keyboard navigation. */
+    a:focus-visible,
+    button:focus-visible,
+    [tabindex]:focus-visible {
+      outline: 3px solid var(--focus-ring);
+      outline-offset: 2px;
+    }
+    /* Skip-to-content link, visible on focus only. */
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: 0;
+      background: var(--text);
+      color: var(--bg);
+      padding: .5rem 1rem;
+      z-index: 100;
+    }
+    .skip-link:focus {
+      left: .5rem;
+      top: .5rem;
+    }
 
+    h1 { font-size: 2rem;   margin: 0 0 .25rem 0; }
+    h2 { font-size: 1.25rem; margin-top: 2rem; }
+    h3 { font-size: 1.1rem; }
 
-<meta name="keywords" content="Andriy, Norets, Bayesian, econometrics">
+    .page-header {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+    .page-header .meta { flex: 1 1 18rem; }
+    .page-header img {
+      max-width: 200px;
+      height: auto;
+      border: 1px solid var(--rule);
+    }
+    .contact dt { font-weight: bold; }
+    .contact dd { margin: 0 0 .25rem 1.5rem; }
 
+    hr {
+      border: none;
+      border-top: 1px solid var(--rule);
+      margin: 1.5rem 0;
+    }
 
-<!--<link href='http://fonts.googleapis.com/css?family=Cousine:400,700' rel='stylesheet' type='text/css'> -->
-<link rel="stylesheet" type="text/css" href="./homepage_files/nam.css" title="style1">
+    ol.publications {
+      padding-left: 1.5rem;
+    }
+    ol.publications li {
+      margin-bottom: .85rem;
+    }
+    cite { font-style: italic; }
 
-<title>Andriy Norets Homepage</title>
+    .resource-list a + a::before { content: "  "; }
 
+    /* Responsive: stack photo above text on narrow screens. */
+    @media (max-width: 32rem) {
+      .page-header { flex-direction: column-reverse; align-items: stretch; }
+      .page-header img { align-self: flex-start; }
+      body { padding: 1rem; }
+    }
+
+    /* Respect user motion / contrast preferences. */
+    @media (prefers-contrast: more) {
+      :root { --link: #0000ee; --link-hover: #cc0000; }
+    }
+  </style>
 </head>
-
 <body>
 
+<a class="skip-link" href="#main">Skip to main content</a>
 
-<table style="width:100%;">
-<tbody><tr>
-<td style="vertical-align:top;">
-<span style="font-size:30pt;">Andriy Norets</span>
-<p>Professor<br>
-<a href="https://economics.brown.edu">Economics Department</a><br>
-<a href="https://www.brown.edu"> Brown University</a> 
-</p>
-<p></p>
-<table>
-<tbody><tr><th>Email</th><td>Andriy_Norets@brown.edu</td></tr>
-<!--<tr><th>Phone</th><td>+1.609.258.4012</td></tr> -->
-<tr><th>Office </th><td>209 Robinson Hall</td></tr>
-<!--<tr><th>Office Hours for Fall 2018</th><td>Tue, 10:30-11:30pm</td></tr>-->
-<!-- <tr><th>Office Hours</th><td><a href="https://www.google.com/calendar/selfsched?sstoken=UVBZTzF6Mi1NTDlhfGRlZmF1bHR8YmU4ZTA0ZWY2MWZiMzNiY2UyNWU4MzkyMWQ1M2E1ZjQ">Google Calendar Appointments</td></tr> -->
- 
- 
+<header class="page-header">
+  <div class="meta">
+    <h1>Andriy Norets</h1>
+    <p>
+      Professor<br>
+      <a href="https://economics.brown.edu">Economics Department</a><br>
+      <a href="https://www.brown.edu">Brown University</a>
+    </p>
+    <dl class="contact">
+      <dt>Email</dt>
+      <dd><a href="mailto:Andriy_Norets@brown.edu">Andriy_Norets@brown.edu</a></dd>
+      <dt>Office</dt>
+      <dd>209 Robinson Hall</dd>
+    </dl>
+  </div>
+  <img src="./homepage_files/Norets-Andriy.jpg"
+       alt="Portrait of Andriy Norets"
+       width="200" height="200">
+</header>
 
-</td></tr></tbody></table>
+<main id="main">
 
+  <p>
+    <a href="./anoretsCV.pdf">Curriculum Vitae (PDF)</a>
+  </p>
 
+  <hr>
 
+  <section aria-labelledby="working-papers-heading">
+    <h2 id="working-papers-heading">Working Papers</h2>
+    <ol class="publications">
+    <!-- BEGIN: working-papers (auto-generated from norets_publications.bib; do not edit by hand) -->
+      <li>"Bayesian Nonparametric Model for Nonseparable Instrumental Variable Regression", with Simone Martinalli, draft coming soon.</li>
+    <!-- END: working-papers -->
+    </ol>
+  </section>
 
-</p></td><td style="text-align:right;"> 
+  <hr>
 
-<img height="200" src="./homepage_files/Norets-Andriy.jpg"> 
+  <section aria-labelledby="published-papers-heading">
+    <h2 id="published-papers-heading">Published and Forthcoming Papers</h2>
+    <ol class="publications">
+    <!-- BEGIN: published-papers (auto-generated from norets_publications.bib; do not edit by hand) -->
+      <li>"Locally Robust Efficient Bayesian Inference", <a href="./papers/robbayes.pdf">pdf</a>, <a href="https://zenodo.org/records/18929290">Replication package</a>, with <a href="http://www.princeton.edu/~umueller">Ulrich Müller</a>, forthcoming in <cite>Econometrica</cite>.</li>
+      <li>"MCMC Proposals Based on Method of Moments with an Application to Finite Beta Mixtures", <a href="./papers/BetaMixture_JER_published_online.pdf">pdf</a>, with <a href="https://www.tang-xun.com/">Xun Tang</a>, <cite>The Japanese Economic Review</cite>, January 2026. Replication code: <a href="./papers/beta_mix_code.zip.zip">zip</a>.</li>
+      <li>"Semiparametric Bayesian Estimation of Dynamic Discrete Choice Models", <a href="./papers/norets_shimizu.pdf">pdf</a>, with <a href="https://www.kenichi-shimizu.com/">Kenichi Shimizu</a>, <cite>Journal of Econometrics</cite>, Volume 238, Issue 2, January 2024. Replication code: <a href="./papers/mix_ddcm_code.zip">zip</a>.</li>
+      <li>"Adaptive Bayesian Estimation of Mixed Discrete-Continuous Distributions under Smoothness and Sparsity", <a href="./papers/smoothdiscpaper.pdf">pdf</a>, with Justinas Pelenis, <cite>Econometrica</cite>, Volume 90, Issue 3, May 2022, pp. 1355–1377. Replication code: <a href="./papers/replication_code_eca_disc_cont_mixtures.zip">zip</a>.</li>
+      <li>"Adaptive Bayesian Estimation of Conditional Discrete-Continuous Distributions with an Application to Stock Market Trading Activity", <a href="./papers/adapt_discr_cond.pdf">pdf</a>, with Justinas Pelenis, <cite>Journal of Econometrics</cite>, Volume 230, Issue 1, September 2022, pp. 62–82.</li>
+      <li>"Optimal Auxiliary Priors and Reversible Jump Proposals for a Class of Variable Dimension Models", <a href="./papers/optretrsampling.pdf">pdf</a>, <cite>Econometric Theory</cite>, Volume 37, Issue 1, February 2021, pp. 49–81. Code for a polynomial regression example: <a href="./papers/code_poly_regression.zip">zip</a>. Code for a mixture of experts application: <a href="./papers/code_mixture_experts.zip">zip</a>.</li>
+      <li>"Adaptive Bayesian Estimation of Conditional Densities", <a href="./papers/denreg_paper.pdf">pdf</a>, with Debdeep Pati, <cite>Econometric Theory</cite>, Volume 33, Issue 4, August 2017, pp. 980–1012. Bibliography style file (<code>*.bst</code>) for bibtex that implements <em>Econometric Theory</em>'s reference style: <a href="./papers/et.bst">et.bst</a>.</li>
+      <li>"Credibility of Confidence Sets in Nonstandard Econometric Problems", <a href="./papers/cred_cs_paper.pdf">pdf</a>, with <a href="http://www.princeton.edu/~umueller">Ulrich Müller</a>, <cite>Econometrica</cite>, Volume 84, Issue 6, November 2016, pp. 2183–2213.</li>
+      <li>"Coverage Inducing Priors in Nonstandard Inference Problems", <a href="./papers/covpriors.pdf">pdf</a>, with <a href="http://www.princeton.edu/~umueller">Ulrich Müller</a>, <cite>Journal of the American Statistical Association</cite>, Volume 111, Issue 515, 2016, pp. 1233–1241.</li>
+      <li>"Bayesian Regression with Nonparametric Heteroskedasticity", <a href="./papers/hetreg.pdf">pdf</a>, <cite>Journal of Econometrics</cite>, Volume 185, Issue 2, April 2015, pp. 409–419.</li>
+      <li>"Semiparametric Inference in Dynamic Binary Choice Models", <a href="./papers/ddc_paper.pdf">pdf</a>, with <a href="https://www.tang-xun.com/">Xun Tang</a>, <cite>Review of Economic Studies</cite>, Volume 81, Issue 3, 2014, pp. 1229–1262. An extension to dynamic multinomial choice models: <a href="./papers/ddc_mult_paper.pdf">pdf</a>.</li>
+      <li>"Posterior Consistency in Conditional Density Estimation by Covariate Dependent Mixtures", <a href="./papers/consmixreg.pdf">pdf</a>, with Justinas Pelenis, <cite>Econometric Theory</cite>, Volume 30, Issue 3, June 2014, pp. 606–646. Replication code: <a href="./papers/CondDensCons_KSB_code.zip">zip</a>.</li>
+      <li>"On the Surjectivity of the Mapping between Utilities and Choice Probabilities", <a href="./papers/inverseccp.pdf">pdf</a>, with Satoru Takahashi, <cite>Quantitative Economics</cite>, Volume 4, Issue 1, March 2013, pp. 149–155.</li>
+      <li>"Bayesian Modeling of Joint and Conditional Distributions", <a href="./papers/paper_jointmix.pdf">pdf</a>, with Justinas Pelenis, <cite>Journal of Econometrics</cite>, Volume 168, Issue 2, June 2012, pp. 332–346. Web appendix: <a href="./papers/multmix_app.pdf">pdf</a>.</li>
+      <li>"Estimation of Dynamic Discrete Choice Models Using Artificial Neural Network Approximations", <a href="./papers/anorets07_ANNMCMC.pdf">pdf</a>, <cite>Econometric Reviews</cite>, Volume 31, Issue 1, 2012, pp. 84–106.</li>
+      <li>"Approximation of Conditional Densities by Smooth Mixtures of Regressions", <a href="./papers/mixreg_aos.pdf">pdf</a>, <cite>Annals of Statistics</cite>, Volume 38, Issue 3, 2010, pp. 1733–1766.</li>
+      <li>"Continuity and Differentiability of Expected Value Functions in Dynamic Discrete Choice Models", <a href="./papers/evdiff.pdf">pdf</a>, <cite>Quantitative Economics</cite>, Volume 1, Issue 2, November 2010, pp. 305–322.</li>
+      <li>"Inference in Dynamic Discrete Choice Models with Serially Correlated Unobserved State Variables", <a href="./papers/ecta7292.pdf">pdf</a>, <cite>Econometrica</cite>, Volume 77, Issue 5, September 2009, pp. 1665–1682. Web Supplement with proofs: <a href="./papers/ecta7292supp.pdf">pdf</a>.</li>
+    <!-- END: published-papers -->
+    </ol>
+  </section>
 
-</td></tr></tbody></table>
+  <section aria-labelledby="old-working-papers-heading">
+    <h2 id="old-working-papers-heading">Old Working Papers</h2>
+    <ol class="publications">
+    <!-- BEGIN: old-working-papers (auto-generated from norets_publications.bib; do not edit by hand) -->
+      <li>"Semiparametric Identification of Dynamic Multinomial Choice Models".</li>
+      <li>"Implementation of Bayesian Inference in Dynamic Discrete Choice Models", <a href="./papers/anorets_bdp_implement.pdf">pdf</a>.</li>
+    <!-- END: old-working-papers -->
+    </ol>
+  </section>
 
+  <hr>
 
-<h2>
-CV: <a href="./anoretsCV.pdf">pdf</a>
-</h2>
+  <section aria-labelledby="teaching-heading">
+    <h2 id="teaching-heading">Teaching</h2>
+    <ul>
+      <li><a href="./papers/SyllabusUndergradMetrics.pdf">Undergraduate Econometrics (syllabus, PDF)</a></li>
+      <li><a href="./papers/SyllabusGradMetricsII.pdf">Graduate Econometric Theory II (syllabus, PDF)</a></li>
+      <li><a href="./papers/SyllabusGradMetricsTopics.pdf">Graduate Topics in Econometrics (syllabus, PDF)</a></li>
+    </ul>
+  </section>
 
-
+</main>
 
 <hr>
 
+<footer>
+  <p><small>Page last built from <code>norets_publications.bib</code>.</small></p>
+</footer>
 
-
-<h2>Working Papers</h2>
-
-<ol>
-
-
-<li>  "Bayesian Nonparametric Model for Nonseparable Instrumental Variable Regression",
-   with Simone Martinalli, draft coming soon.
-</li>
-
-
-
-
-
-
-
-
-
- <!--
- <li> "Posterior Consistency in Kullback-Leibler Divergence with
-  Applications to Misspecified Infinite Dimensional Models," 2012, 
-  <a href="./papers/klcons.pdf">pdf</a>.
- </li>
--->
-
-
-
-</ol> 
-
-<hr>
-
-<h2>Published and Forthcoming Papers</h2>
-
-<ol>
-
-
-<li>  "Locally Robust Efficient Bayesian Inference",
-<a href="./papers/robbayes.pdf">pdf</a>, 
-   with <a href="http://www.princeton.edu/~umueller">Ulrich Mueller</a>, forthcoming in <em>Econometrica</em>, <a href="https://zenodo.org/records/18929290">Replication package</a>. 
-</li>
-
-
-<li> "MCMC Proposals Based on Method of Moments with an Application to Finite Beta Mixtures,"  
-<a href="./papers/BetaMixture_JER_published_online.pdf">pdf</a>, 
-with <a href="https://www.tang-xun.com/">Xun Tang,</a> 
-<em>The Japanese Economic Review</em>, January 2026. Replication code: 
-    <a href="./papers/beta_mix_code.zip.zip">zip</a>.   
- </li>
-
-<li> "Semiparametric Bayesian Estimation of Dynamic Discrete Choice Models",  
-<a href="./papers/norets_shimizu.pdf">pdf</a>,
-   with <a href="https://www.kenichi-shimizu.com/"> Kenichi Shimizu</a>. 
- <em>The Journal of Econometrics</em>, Volume 238, Issue 2, January 2024.   
-   Replication code: 
-    <a href="./papers/mix_ddcm_code.zip">zip</a>.
-</li>
-
-<li> "Adaptive Bayesian Estimation of Mixed Discrete-Continuous Distributions under Smoothness and Sparsity," 
-   <a href="./papers/smoothdiscpaper.pdf">pdf</a>, with
-   Justinas Pelenis, <em>Econometrica</em>, Volume 90, Issue 3, May 2022, pp. 1355-1377.  Replication code: 
-    <a href="./papers/replication_code_eca_disc_cont_mixtures.zip">zip</a>.
-</li>
-
-<li> "Adaptive Bayesian Estimation of Conditional Discrete-Continuous Distributions with an Application to Stock Market Trading Activity," 
-   <a href="./papers/adapt_discr_cond.pdf">pdf</a>, with Justinas Pelenis, <em>The Journal of Econometrics</em>, 
-   Volume 230, Issue 1, September 2022, pp. 62-82.
-</li>
-
-<li> "Optimal Auxiliary Priors and Reversible Jump Proposals for a Class of Variable Dimension Models," 
-  <a href="./papers/optretrsampling.pdf">pdf</a>,
-  <em>Econometric Theory</em>, 
-   Volume 37, Issue 1, February 2021, pp. 49-81. Code for a polynomial regression example:
-  <a href="./papers/code_poly_regression.zip">zip</a>,
-  code for a mixture of experts application:
-  <a href="./papers/code_mixture_experts.zip">zip</a>.
-</li>
-
-<li> "Adaptive Bayesian Estimation of Conditional Densities," 
- <a href="./papers/denreg_paper.pdf">pdf</a>,
-  with Debdeep Pati, <em>Econometric Theory</em>, Volume 33, Issue 4, August 2017, pp. 980-1012.  
-  Bibliography style file (*.bst) for bibtex that implements <em>Econometric Theory</em>'s reference style: 
-  <a href="./papers/et.bst">et.bst</a>.
-</li>
-
-<li> "Credibility of Confidence Sets in Nonstandard Econometric Problems," 
-  <a href="./papers/cred_cs_paper.pdf">pdf</a>, 
-  with <a href="http://www.princeton.edu/~umueller">Ulrich Mueller</a>, <em>Econometrica</em>, Volume 84, Issue 6, November 2016, pp. 2183-2213.
- </li>
-
-
- 
-<li> "Coverage Inducing Priors in Nonstandard Inference Problems," 
-with <a href="http://www.princeton.edu/~umueller">Ulrich Mueller</a>, 
-  <a href="./papers/covpriors.pdf">pdf</a>,
-  <em>Journal of the American Statistical Association</em>, Volume 111, Issue 515, 2016, pp. 1233-1241.
- </li>
-
-
- <li> "Bayesian Regression with Nonparametric Heteroskedasticity," 
-  <a href="./papers/hetreg.pdf">pdf</a>,
-  <em>The Journal of Econometrics</em>, Volume 185, Issue 2, April 2015, pp. 409-419.
- </li>
-
-
- <li> "Semiparametric Inference in Dynamic Binary Choice Models," 
-   <a href="./papers/ddc_paper.pdf">pdf</a>, 
-   with <a href="https://www.tang-xun.com/">Xun Tang</a>, 
-   <em>Review of Economic Studies</em>, Volume 81, Issue 3, 2014, pp. 1229-1262. 
-   An extension to dynamic multinomial
-   choice models is here: 
-   <a href="./papers/ddc_mult_paper.pdf">pdf</a>.
-  </li>
-
-  <li> "Posterior Consistency in Conditional Density Estimation by Covariate Dependent Mixtures," 
-   <a href="./papers/consmixreg.pdf">pdf</a>,  
-  with Justinas Pelenis, 
-   <em>Econometric Theory</em>, Volume 30, Issue 03, June 2014, pp 606-646,
-   <a href="./papers/CondDensCons_KSB_code.zip">link</a>
-   to replication code for simulation exercises. 
-  </li>
-
-  <li> "On the Surjectivity of the Mapping between Utilities and
-   Choice Probabilities," 
-   <a href="./papers/inverseccp.pdf">pdf</a>, 
-   with Satoru Takahashi, 2013, <em>Quantitative Economics</em>, Volume 4, Issue 1, pages 149-155.  
-  </li>
-
-  <li> "Bayesian Modeling of Joint and Conditional Distributions," 
-   <a href="./papers/paper_jointmix.pdf">pdf</a>, 
-   with Justinas Pelenis, 
-   2012, <em>Journal of Econometrics</em>, Volume 168, Issue 2,  pages 332-346, 
-   <a href="./papers/multmix_app.pdf">web appendix</a>.
-  </li>
-
-  <li> "Estimation of Dynamic Discrete Choice Models Using Artificial Neural Network Approximations," 
-   <a href="./papers/anorets07_ANNMCMC.pdf">pdf</a>, 2012,
-   <em>Econometric Reviews</em>, Volume 31, Issue 1, pages 84-106.
-  </li>
-
-
-  <li> "Approximation of Conditional Densities by Smooth Mixtures of Regressions,"
-   <a href="./papers/mixreg_aos.pdf">pdf</a>, 2010, <em>Annals of Statistics</em>, 38(3), pages 1733-1766.
-  </li>
-
-
- <li>  "Continuity and Differentiability of Expected Value Functions in Dynamic Discrete Choice Models," 
-  <a href="./papers/evdiff.pdf">pdf</a>,
-  2010, <em>Quantitative Economics</em> 1, pages 305-322.
- </li>
-  
-  
- <li> "Inference in Dynamic Discrete Choice Models with Serially Correlated Unobserved State Variables," 
-  <a href="./papers/ecta7292.pdf">pdf</a>, 2009, <em>Econometrica</em>, Volume 77, Issue 5, 
-  pages 1665-1682. Web Supplement with proofs: <a href="./papers/ecta7292supp.pdf">pdf</a>.
- </li>
-  
- 
-</ol>
-
-<h2> Old Working Papers</h2>
-
-<ol>
-
- <li> "Implementation of Bayesian Inference in Dynamic Discrete Choice Models,"  
- <a href="./papers/anorets_bdp_implement.pdf">pdf</a>.
- </li>
-
- 
-</ol> 
-
- 
-<hr>
-
-
-<h2>Teaching</h2>
-
-<ul>
-<li> <a href="./papers/SyllabusUndergradMetrics.pdf"> Undergraduate Econometrics
-</li>
-<li> <a href="./papers/SyllabusGradMetricsII.pdf"> Graduate Econometric Theory II
-</li> 
-<li><a href="./papers/SyllabusGradMetricsTopics.pdf"> Graduate Topics in Econometrics
-</li>
-</ul>
-
-
-</p><hr>
-
-<!-- Statcounter code for Andriy Norets webpage
-https://www.brown.edu/Departments/Economics/Faculty/Andriy_Norets/
-on Google Sites (new) -->
-<script type="text/javascript">
-var sc_project=2971270; 
-var sc_invisible=1; 
-var sc_security="3c973199"; 
+<!-- Statcounter analytics. Marked aria-hidden because it has no user value. -->
+<script>
+  var sc_project=2971270;
+  var sc_invisible=1;
+  var sc_security="3c973199";
 </script>
-<script type="text/javascript"
-src="https://www.statcounter.com/counter/counter.js"
-async></script>
-<noscript><div class="statcounter"><a title="Web Analytics
-Made Easy - StatCounter" href="https://statcounter.com/"
-target="_blank"><img class="statcounter"
-src="https://c.statcounter.com/2971270/0/3c973199/1/"
-alt="Web Analytics Made Easy -
-StatCounter"></a></div></noscript>
-<!-- End of Statcounter Code -->
+<script src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript>
+  <div class="statcounter" aria-hidden="true">
+    <a title="Web Analytics Made Easy - StatCounter"
+       href="https://statcounter.com/" target="_blank" rel="noopener">
+      <img class="statcounter"
+           src="https://c.statcounter.com/2971270/0/3c973199/1/"
+           alt="">
+    </a>
+  </div>
+</noscript>
 
-</body></html>
+</body>
+</html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              

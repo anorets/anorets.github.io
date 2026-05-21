@@ -1,0 +1,321 @@
+% norets_publications.bib
+% --------------------------------------------------------------------
+% Single source of truth for Andriy Norets's publication list.
+% Consumed by:
+%   * anoretsCV.tex (via biblatex + biber)
+%   * index.html    (via build_publications.py -- run by GitHub Actions)
+%
+% Custom (non-standard) fields used by the webpage build script:
+%   pdf         relative URL to the paper PDF
+%   code        relative URL to replication code archive
+%   replication external URL to a replication package (e.g. Zenodo)
+%   appendix    relative URL to a web/online appendix
+%   extension   relative URL to an extension or companion paper
+%   extlabel    label text for the extension link
+%   note        extra free-form HTML appended after the citation
+%   status      one of: published, forthcoming, working, old_working
+%   sortdate    YYYY-MM string used to sort newest-first
+%
+% biblatex ignores unknown fields, so the CV is unaffected by these.
+% --------------------------------------------------------------------
+
+
+% =====================================================================
+% Forthcoming / accepted
+% =====================================================================
+
+@article{NoretsMueller_RobBayes,
+  author    = {Norets, Andriy and M\"{u}ller, Ulrich},
+  title     = {Locally Robust Efficient {B}ayesian Inference},
+  journal   = {Econometrica},
+  year      = {2026},
+  pdf       = {./papers/robbayes.pdf},
+  replication = {https://zenodo.org/records/18929290},
+  status    = {forthcoming},
+  sortdate  = {2026-12}
+}
+
+
+% =====================================================================
+% Published
+% =====================================================================
+
+@article{NoretsTang_BetaMix,
+  author    = {Norets, Andriy and Tang, Xun},
+  title     = {{MCMC} Proposals Based on Method of Moments with an Application to Finite Beta Mixtures},
+  journal   = {The Japanese Economic Review},
+  year      = {2026},
+  month     = jan,
+  pdf       = {./papers/BetaMixture_JER_published_online.pdf},
+  code      = {./papers/beta_mix_code.zip.zip},
+  status    = {published},
+  sortdate  = {2026-01}
+}
+
+@article{NoretsShimizu_SemiBayesDDC,
+  author    = {Norets, Andriy and Shimizu, Kenichi},
+  title     = {Semiparametric {B}ayesian Estimation of Dynamic Discrete Choice Models},
+  journal   = {Journal of Econometrics},
+  year      = {2024},
+  month     = jan,
+  volume    = {238},
+  number    = {2},
+  pdf       = {./papers/norets_shimizu.pdf},
+  code      = {./papers/mix_ddcm_code.zip},
+  status    = {published},
+  sortdate  = {2024-01}
+}
+
+@article{NoretsPelenis_DiscCont_Eca,
+  author    = {Norets, Andriy and Pelenis, Justinas},
+  title     = {Adaptive {B}ayesian Estimation of Mixed Discrete-Continuous Distributions under Smoothness and Sparsity},
+  journal   = {Econometrica},
+  year      = {2022},
+  month     = may,
+  volume    = {90},
+  number    = {3},
+  pages     = {1355--1377},
+  pdf       = {./papers/smoothdiscpaper.pdf},
+  code      = {./papers/replication_code_eca_disc_cont_mixtures.zip},
+  status    = {published},
+  sortdate  = {2022-05}
+}
+
+@article{NoretsPelenis_DiscrCond_JoE,
+  author    = {Norets, Andriy and Pelenis, Justinas},
+  title     = {Adaptive {B}ayesian Estimation of Conditional Discrete-Continuous Distributions with an Application to Stock Market Trading Activity},
+  journal   = {Journal of Econometrics},
+  year      = {2022},
+  month     = sep,
+  volume    = {230},
+  number    = {1},
+  pages     = {62--82},
+  pdf       = {./papers/adapt_discr_cond.pdf},
+  status    = {published},
+  sortdate  = {2022-09}
+}
+
+@article{Norets_OptAuxPriors,
+  author    = {Norets, Andriy},
+  title     = {Optimal Auxiliary Priors and Reversible Jump Proposals for a Class of Variable Dimension Models},
+  journal   = {Econometric Theory},
+  year      = {2021},
+  month     = feb,
+  volume    = {37},
+  number    = {1},
+  pages     = {49--81},
+  pdf       = {./papers/optretrsampling.pdf},
+  code      = {./papers/code_poly_regression.zip},
+  codelabel = {code for a polynomial regression example},
+  code2     = {./papers/code_mixture_experts.zip},
+  code2label = {code for a mixture of experts application},
+  status    = {published},
+  sortdate  = {2021-02}
+}
+
+@article{NoretsPati_AdaptCondDens,
+  author    = {Norets, Andriy and Pati, Debdeep},
+  title     = {Adaptive {B}ayesian Estimation of Conditional Densities},
+  journal   = {Econometric Theory},
+  year      = {2017},
+  month     = aug,
+  volume    = {33},
+  number    = {4},
+  pages     = {980--1012},
+  pdf       = {./papers/denreg_paper.pdf},
+  note      = {Bibliography style file (<code>*.bst</code>) for bibtex that implements <em>Econometric Theory</em>'s reference style: <a href="./papers/et.bst">et.bst</a>.},
+  status    = {published},
+  sortdate  = {2017-08}
+}
+
+@article{NoretsMueller_CredCS,
+  author    = {Norets, Andriy and M\"{u}ller, Ulrich},
+  title     = {Credibility of Confidence Sets in Nonstandard Econometric Problems},
+  journal   = {Econometrica},
+  year      = {2016},
+  month     = nov,
+  volume    = {84},
+  number    = {6},
+  pages     = {2183--2213},
+  pdf       = {./papers/cred_cs_paper.pdf},
+  status    = {published},
+  sortdate  = {2016-11}
+}
+
+@article{NoretsMueller_CovPriors,
+  author    = {Norets, Andriy and M\"{u}ller, Ulrich},
+  title     = {Coverage Inducing Priors in Nonstandard Inference Problems},
+  journal   = {Journal of the American Statistical Association},
+  year      = {2016},
+  volume    = {111},
+  number    = {515},
+  pages     = {1233--1241},
+  pdf       = {./papers/covpriors.pdf},
+  status    = {published},
+  sortdate  = {2016-09}
+}
+
+@article{Norets_BayesHet,
+  author    = {Norets, Andriy},
+  title     = {{B}ayesian Regression with Nonparametric Heteroskedasticity},
+  journal   = {Journal of Econometrics},
+  year      = {2015},
+  month     = apr,
+  volume    = {185},
+  number    = {2},
+  pages     = {409--419},
+  pdf       = {./papers/hetreg.pdf},
+  status    = {published},
+  sortdate  = {2015-04}
+}
+
+@article{NoretsTang_SemiDDBC,
+  author    = {Norets, Andriy and Tang, Xun},
+  title     = {Semiparametric Inference in Dynamic Binary Choice Models},
+  journal   = {Review of Economic Studies},
+  year      = {2014},
+  volume    = {81},
+  number    = {3},
+  pages     = {1229--1262},
+  pdf       = {./papers/ddc_paper.pdf},
+  extension = {./papers/ddc_mult_paper.pdf},
+  extlabel  = {An extension to dynamic multinomial choice models},
+  status    = {published},
+  sortdate  = {2014-07}
+}
+
+@article{NoretsPelenis_PostCons,
+  author    = {Norets, Andriy and Pelenis, Justinas},
+  title     = {Posterior Consistency in Conditional Density Estimation by Covariate Dependent Mixtures},
+  journal   = {Econometric Theory},
+  year      = {2014},
+  month     = jun,
+  volume    = {30},
+  number    = {3},
+  pages     = {606--646},
+  pdf       = {./papers/consmixreg.pdf},
+  code      = {./papers/CondDensCons_KSB_code.zip},
+  status    = {published},
+  sortdate  = {2014-06}
+}
+
+@article{NoretsTakahashi_Surjectivity,
+  author    = {Norets, Andriy and Takahashi, Satoru},
+  title     = {On the Surjectivity of the Mapping between Utilities and Choice Probabilities},
+  journal   = {Quantitative Economics},
+  year      = {2013},
+  month     = mar,
+  volume    = {4},
+  number    = {1},
+  pages     = {149--155},
+  pdf       = {./papers/inverseccp.pdf},
+  status    = {published},
+  sortdate  = {2013-03}
+}
+
+@article{NoretsPelenis_BayesJointCond,
+  author    = {Norets, Andriy and Pelenis, Justinas},
+  title     = {{B}ayesian Modeling of Joint and Conditional Distributions},
+  journal   = {Journal of Econometrics},
+  year      = {2012},
+  month     = jun,
+  volume    = {168},
+  number    = {2},
+  pages     = {332--346},
+  pdf       = {./papers/paper_jointmix.pdf},
+  appendix  = {./papers/multmix_app.pdf},
+  status    = {published},
+  sortdate  = {2012-06}
+}
+
+@article{Norets_DDCM_ANN,
+  author    = {Norets, Andriy},
+  title     = {Estimation of Dynamic Discrete Choice Models Using Artificial Neural Network Approximations},
+  journal   = {Econometric Reviews},
+  year      = {2012},
+  volume    = {31},
+  number    = {1},
+  pages     = {84--106},
+  pdf       = {./papers/anorets07_ANNMCMC.pdf},
+  status    = {published},
+  sortdate  = {2012-01}
+}
+
+@article{Norets_AOS_SmoothMix,
+  author    = {Norets, Andriy},
+  title     = {Approximation of Conditional Densities by Smooth Mixtures of Regressions},
+  journal   = {Annals of Statistics},
+  year      = {2010},
+  volume    = {38},
+  number    = {3},
+  pages     = {1733--1766},
+  pdf       = {./papers/mixreg_aos.pdf},
+  status    = {published},
+  sortdate  = {2010-06}
+}
+
+@article{Norets_ContDiff_EV,
+  author    = {Norets, Andriy},
+  title     = {Continuity and Differentiability of Expected Value Functions in Dynamic Discrete Choice Models},
+  journal   = {Quantitative Economics},
+  year      = {2010},
+  month     = nov,
+  volume    = {1},
+  number    = {2},
+  pages     = {305--322},
+  pdf       = {./papers/evdiff.pdf},
+  status    = {published},
+  sortdate  = {2010-11}
+}
+
+@article{Norets_DDCM_Serial,
+  author    = {Norets, Andriy},
+  title     = {Inference in Dynamic Discrete Choice Models with Serially Correlated Unobserved State Variables},
+  journal   = {Econometrica},
+  year      = {2009},
+  month     = sep,
+  volume    = {77},
+  number    = {5},
+  pages     = {1665--1682},
+  pdf       = {./papers/ecta7292.pdf},
+  appendix  = {./papers/ecta7292supp.pdf},
+  appendixlabel = {Web Supplement with proofs},
+  status    = {published},
+  sortdate  = {2009-09}
+}
+
+
+% =====================================================================
+% Current working papers
+% =====================================================================
+
+@unpublished{NoretsMartinalli_BNP_IV,
+  author    = {Norets, Andriy and Martinalli, Simone},
+  title     = {{B}ayesian Nonparametric Model for Nonseparable Instrumental Variable Regression},
+  year      = {2026},
+  note      = {draft coming soon},
+  status    = {working},
+  sortdate  = {2026-01}
+}
+
+
+% =====================================================================
+% Older working papers
+% =====================================================================
+
+@unpublished{Norets_DDCM_Multinomial,
+  author    = {Norets, Andriy},
+  title     = {Semiparametric Identification of Dynamic Multinomial Choice Models},
+  year      = {2011},
+  status    = {old_working},
+  sortdate  = {2011-01}
+}
+
+@unpublished{Norets_BayesImpl_DDCM,
+  author    = {Norets, Andriy},
+  title     = {Implementation of {B}ayesian Inference in Dynamic Discrete Choice Models},
+  year      = {2009},
+  pdf       = {./papers/anorets_bdp_implement.pdf},
+  status    = {old_working},
+  sortdate  = {2009-01}
+}
