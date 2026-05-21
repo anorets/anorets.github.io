@@ -1,0 +1,61 @@
+name: Build publications list
+
+# Regenerates the publication sections of index.html from
+# norets_publications.bib whenever the bib file (or the build script) changes,
+# and pushes the result back to the same branch.
+#
+# Required repo setting:
+#   Settings -> Actions -> General -> Workflow permissions:
+#     "Read and write permissions" must be enabled so the action can push.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'norets_publications.bib'
+      - 'build_publications.py'
+      - 'index.html'
+      - '.github/workflows/build.yml'
+  workflow_dispatch: {}
+
+# Allow the job to write back to the repository.
+permissions:
+  contents: write
+
+# Cancel an older run if a new push arrives on the same branch.
+concurrency:
+  group: build-publications-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    # Don't recurse: skip when the most recent commit was made by this workflow.
+    if: ${{ !contains(github.event.head_commit.message, '[auto-build]') }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          # Use the default token; ensure write permission is granted (see top).
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Regenerate publication sections
+        run: python3 build_publications.py
+
+      - name: Commit and push changes (if any)
+        run: |
+          if [[ -n "$(git status --porcelain index.html)" ]]; then
+            git config user.name  "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add index.html
+            git commit -m "[auto-build] regenerate publications from norets_publications.bib"
+            git push
+          else
+            echo "index.html already up to date; nothing to commit."
+          fi
